@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #fff; */
+    color: black;
+}
+nav ul li,a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    margin: 0 23px;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #147efb;
+}
+
+.left{
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+}
+
+header{
+    position:fixed;
+    width: 100%;
+}
+
+.firstSection{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 90vh;
+    padding: 50px 0;
+}
+
+.leftSection{
+    width: 35%;
+}
+.leftSection h1{
+    font-size: 60px;
+}
+
+.leftSection > p{
+    font-size: 25px;
+}
+
+.rightSection img{
+    width: 80%;
+}
+
+/* about me section */
+
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+.about-img{
+    border-radius: 1.7rem;
+    height: 21rem;
+    width: 29rem;
+    float: right;
+}
+
+.secondSection{
+    background-color: whitesmoke;
+}
+
+.about-left{
+    width: 45%;
+}
+
+.about-right{
+    width: 45%;
+    padding-right: 100px;
+    height: 328px;
+}
+
+.about-head{
+    font-size: 30px;
+}
+.about-text{
+    font-size: 20px;
+}
+/* skills section */
+
+/* .skills{
+    height: 60vh;
+} */
+.headding-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #147efb;
+}
+.flex-skill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.skill-group h2{
+    font-size: 35px;
+    padding: 5px 0;
+}
+
+.skill-data{
+    display: flex;
+    gap: 1em;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.skill-data p{
+    font-size: 1rem;
+    color:rgb(54, 54, 54);
+}
+
+svg{
+    font-size: 1rem;
+    color: var(#147efb);
+}
+
+.skill-data div h4{
+    font-size: 23px;
+}
+
+
+
+/* project */
+
+.pro-text{
+    height: 240px;
+    width: 298px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.pro-text  h3{
+    color: #147efb;
+    font-size: 2rem;
+}
+.pro-text p{
+    font-size: 1rem;
+    margin: 10px;
+}
+.pro-text a{
+    text-decoration: none;
+    border: 1.5px solid black;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.pro-text a:hover{
+    background-color: aqua;
+}
+
+.pro-container{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro{
+    margin: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.pro:hover{
+    transform: scale(1.2);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.project{
+    height: auto;
+    margin: 100px;
+}
+
+
+
+/* contact Me */
+
+.container{
+    padding: 50px 200px;
+    background-color: #f9f9f9;
+}
+.container > p{
+    font-size: 15pt;
+    color: #147efb;
+}
+.container h3{
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    gap: 4rem;
+    margin-top: 6px;
+}
+
+.mini-logo{
+    width: 20%;
+}
+
+.mail a{
+    margin: 0;
+}
+
+.padding{
+    
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.padding:hover{
+    background-color: #147efb;
+    border: none;
+    transform: scale(0.9);
+}
+
+.footContainer{
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        width: auto;
+        color: #147efb;
+    }    
+
+    nav ul li,a{
+        margin: 0 10px;
+    }
+
+    .firstSection{
+        flex-direction: column;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:425px) {
+    nav ul li,a{
+        margin: 0 4px;
+    }
+}
